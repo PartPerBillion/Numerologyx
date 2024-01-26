@@ -113,7 +113,7 @@ def numerology(x):
         for i in str(number):
             sumx+=int(i)
             number = sumx
-            st.caption(f'Sum - {number}')
+        st.caption(f'Sum - {number}')
             
     st.divider()
     if number>0:
