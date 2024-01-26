@@ -97,7 +97,7 @@ def numerology(x):
     print(x)
     x = x.replace(' ','')
     x = x.upper()
-    for i in Sentence: 
+    for i in x: 
         if i in string.punctuation: 
             x.replace(i,'')
     sumx = 0
