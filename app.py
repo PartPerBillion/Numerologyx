@@ -106,14 +106,16 @@ def numerology(x):
         st.caption(f'{i}\t - {numerology_dict[i]}')
         sumx += numerology_dict[i]
     st.caption(f'Sum - {sumx}')
-    print('Sum - ',sumx)
+    print('Sum 1 - ',sumx)
     number = sumx
+    count = 2
     while len(str(number))>1:
         sumx = 0
         for i in str(number):
             sumx+=int(i)
             number = sumx
-        st.caption(f'Sum - {number}')
+        st.caption(f'Sum {count} - {number}')
+        count+=1
             
     st.divider()
     if number>0:
