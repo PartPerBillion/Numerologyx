@@ -109,11 +109,12 @@ def numerology(x):
     print('Sum - ',sumx)
     number = sumx
     while len(str(number))>1:
+        st.caption(f'Sum - {number}')
         sumx = 0
         for i in str(number):
             sumx+=int(i)
             number = sumx
-            st.caption(f'Sum - {number}')
+            
     st.divider()
     if number>0:
         st.subheader(f'Numerology number - {number}')
