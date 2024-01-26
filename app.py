@@ -114,9 +114,12 @@ def numerology(x):
             sumx+=int(i)
             number = sumx
     st.divider()
-    st.subheader(f'Numerology number - {number}')
-    print('Numerology number - ',number)
-    st.caption(number_character[number])
+    if number>0:
+        st.subheader(f'Numerology number - {number}')
+        print('Numerology number - ',number)
+        st.caption(number_character[number])
+    else:
+        st.caption('Name is empty')
     print()
 
 st.title(":rainbow[Numerology Calculator]")
