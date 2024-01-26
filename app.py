@@ -103,7 +103,7 @@ def numerology(x):
     sumx = 0
     for i in x:
         # print(i,'-',numerology_dict[i])
-        st.caption(f'{i}\t - {numerology_dict[i]}')
+        st.caption(f'{i}/t - {numerology_dict[i]}')
         sumx += numerology_dict[i]
     st.caption(f'Sum - {sumx}')
     print('Sum - ',sumx)
@@ -112,6 +112,7 @@ def numerology(x):
         sumx = 0
         for i in str(number):
             sumx+=int(i)
+            st.caption(f'Sum - {sumx}')
             number = sumx
     st.divider()
     if number>0:
