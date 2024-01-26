@@ -105,7 +105,7 @@ def numerology(x):
         # print(i,'-',numerology_dict[i])
         st.caption(f'{i}\t - {numerology_dict[i]}')
         sumx += numerology_dict[i]
-    st.caption(f'Sum - {sumx}')
+    st.caption(f'Sum 1 - {sumx}')
     print('Sum 1 - ',sumx)
     number = sumx
     count = 2
