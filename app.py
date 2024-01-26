@@ -1,4 +1,5 @@
 import streamlit as st 
+import string
 
 numerology_dict = {
     'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 8, 'G': 3, 'H': 5, 'I': 1, 'J': 1,
@@ -90,16 +91,19 @@ Challenges and Lessons
 
 Number 9 individuals often face challenges related to self-sacrifice, martyrdom, and a tendency to neglect their needs. To overcome these obstacles, they must learn to set boundaries, prioritize self-care, and recognize that they can serve others better by maintaining their well-being."""
 }
+
 def numerology(x):
     # x = 'SRIHARI IS THE GREATEST of all time of all space'
     print(x)
     x = x.replace(' ','')
     x = x.upper()
-    # print(x)
+    for i in Sentence: 
+    if i in string.punctuation: 
+        x.replace(i,'')
     sumx = 0
     for i in x:
         # print(i,'-',numerology_dict[i])
-        st.caption(f'{i} - {numerology_dict[i]}')
+        st.caption(f'{i}\t - {numerology_dict[i]}')
         sumx += numerology_dict[i]
     st.caption(f'Sum - {sumx}')
     print('Sum - ',sumx)
