@@ -1,6 +1,6 @@
 import streamlit as st 
 import string
-if name == “app”:
+if name == 'app':
     main()
 numerology_dict = {
     'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 8, 'G': 3, 'H': 5, 'I': 1, 'J': 1,
